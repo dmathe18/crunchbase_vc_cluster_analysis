@@ -45,15 +45,20 @@ Here we can see that two-year public and private higher education institutions m
 
 #### What is the relationship between total number of investments and number of diversity investments?
 
-![](.gitbook/assets/final-chart.png)
+![Screen Shot 2021-03-18 at 12 31 13 PM](https://user-images.githubusercontent.com/78438582/111662138-0d484500-87e6-11eb-87f8-9a63d7b8a360.png)
 
 Here we see almost an opposite type of distribution--the highly selective private schools have the highest sticker price, and the two-year not-for-profit institutions have the lowest sticker price. We should also note that the sticker price also does not necessarily reflect the price that students need to pay to attend the institution, however, it can give us insight into the type of students who attend those schools and who don't receive financial aid. Additionally, highly selective public schools have a significantly lower sticker price than their peer institutions, so this may indicate that students could get a better "bang for their buck" here if the student outcomes are similar to peer institutions. 
 
 #### How could the set of 279 venture capital firms and investors included in the filtered Crunchbase accelerator university dataset be clustered according to IPO exits, diversity, and total investments?
 
-![](.gitbook/assets/parent_income_dist_by_tier.png)
+![Screen Shot 2021-03-18 at 12 34 13 PM](https://user-images.githubusercontent.com/78438582/111662427-497ba580-87e6-11eb-8176-46bb50e0e6e5.png)
+
+![Screen Shot 2021-03-18 at 12 33 15 PM](https://user-images.githubusercontent.com/78438582/111662437-4c769600-87e6-11eb-85b1-654c680d5e09.png)
 
 We can also look at the average income distribution at the different higher education tiers where Q1 indicates families in the lowest income quintile and Q5 indicates families in the highest income quintile. We can see that the income distribution starts to even out when we look at nonselective four-year colleges and that elite and other highly selective institutions are predominantly filled with students from the highest income quintile.
+
+![Screen Shot 2021-03-18 at 12 35 01 PM](https://user-images.githubusercontent.com/78438582/111662516-5e583900-87e6-11eb-99a4-05a8cf61161f.png)
+
 
 
 ## Business Answer
