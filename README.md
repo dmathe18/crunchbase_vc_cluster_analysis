@@ -80,7 +80,7 @@ Additional data that may be useful for further analysis includes information and
 7. Calculate mean and average of each column
 8. Use mean and average values to compute z scores for each column
 9. Use SUMXMY2 function to calculate distance to cluster 1 squared, distance to cluster 2 squared, and so on
-10.Use MIN function to identify and list the minimum squared distance
+10. Use MIN function to identify and list the minimum squared distance
 11. Use match function to display the anchor corresponding to the minimum distance squared
 12. Use Solver Data Analysis add-on to compute the clusters that minimize the sum of the minimum distances
 13. List cluster anchors in separate column; use COUNTIF function to calculate the frequency of each anchor
