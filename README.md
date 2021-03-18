@@ -57,15 +57,27 @@ The image above displays the results of the cluster analysis performed for the 2
 
 ![Screen Shot 2021-03-18 at 12 34 13 PM](https://user-images.githubusercontent.com/78438582/111662427-497ba580-87e6-11eb-8176-46bb50e0e6e5.png)
 
-As we can see, the 
+As we can see, the vast majority of venture capital firms in the data set can be grouped in with the first cluster, suggesting that most of the firms have about the same level of total investments, IPO exits, and diversity investments. The z score for these firms is likely negative due to the long right tail of the distribution caused by the six outliers mentioned above. Three firms can be grouped in with the second pool— those with high level of total investments but a less-than-proportional number of IPOs and diversity investments. Three other firms are a part of the third cluster, which represent firms with extremely high levels of total investments, IPOs, and diversity investments. 
 
 ![Screen Shot 2021-03-18 at 12 33 15 PM](https://user-images.githubusercontent.com/78438582/111662437-4c769600-87e6-11eb-85b1-654c680d5e09.png)
 
-We can also look at the average income distribution at the different higher education tiers where Q1 indicates families in the lowest income quintile and Q5 indicates families in the highest income quintile. We can see that the income distribution starts to even out when we look at nonselective four-year colleges and that elite and other highly selective institutions are predominantly filled with students from the highest income quintile.
-
-![Screen Shot 2021-03-18 at 12 36 12 PM](https://user-images.githubusercontent.com/78438582/111662741-93fd2200-87e6-11eb-867f-e6163f559dc8.png)
+The graph above shows the cluster anchor of each organization/person number, with 1 corresponding to the first entry in the dataset, 2 corresponding to the second entry in the dataset, and so on. This chart provides another view of the overwhelming representation of cluster 1 firms as a fraction of the whole.
 
 
 ## Data Interpretation
+The objective of this analysis was to create a logica, coherent grouping of the 279 organizations represented in the dataset, differentiated along variations in total investments, IPO exits, and diversity investments. The analysis found a high level of similarity among most of the firms, with notable exceptions in the second and third clusters. While diversity investments and IPOs appeared to strongly correlated with total investments, the second cluster provides a notable exception. These firms had a high level of total investments but a less-than-proportional number of IPOs and diversity investments. This information could potentially be useful to entrepreneurs looking to take their companies public or filtering their funding search by firms that offer the highest level of diversity investments. In practice, firms in the first cluster to should be interpreted to represent the average VC firm with average total investments, diversity investments, and IPO exists. The second cluster represents firms that entrepreneurs seeking diversity investments or a strong track record of IPOs should avoid. The third cluster represents outliers— proportionally, these firms do not offer substantially better prospects for diversity investments or IPOs than cluster 1 firms. 
+
+Additional data that may be useful for further analysis includes information and statistics on alternative exit options (i.e., other than IPOs). It would be interesting to see if performing a cluster analysis using another metric would help to further differentiate the firms
+
+
 
 ## Step-by-step Instructions for Excel Data Analysis
+1. Download GDP, national defense expenditures and spending, and the effective federal funds rate from FRED
+2. Extract revenue, total assets, and shareholders' equity data from GDC's form 10-K reports
+3. Use ratio analysis formulas to compute net profit margin, total asset turnover, ROA, leverage, and ROE
+4. Use Data Analysis ToolPak to run multiple linear regression analysis for net operating income (dependent variable) and net profit margin, total asset turnover, ROA, leverage, and ROE (independent variables)
+5. Check for multicollinearity using correlation function in Data Analysis ToolPak
+6. Remove variables with high correlation
+7. Rerun multiple linear regression analysis
+8. Perform multiple linear regression analysis for net operating income (dependent variable) and GDP, national defense consumption expenditures and investment, and the effective federal funds rate (independent variables)
+9. Create scatterplots for net income vs. ROA, net income vs. financial leverage, and net income vs. national defense consumption expenditures and investment
