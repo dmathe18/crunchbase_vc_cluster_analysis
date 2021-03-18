@@ -65,19 +65,23 @@ The graph above shows the cluster anchor of each organization/person number, wit
 
 
 ## Data Interpretation
-The objective of this analysis was to create a logica, coherent grouping of the 279 organizations represented in the dataset, differentiated along variations in total investments, IPO exits, and diversity investments. The analysis found a high level of similarity among most of the firms, with notable exceptions in the second and third clusters. While diversity investments and IPOs appeared to strongly correlated with total investments, the second cluster provides a notable exception. These firms had a high level of total investments but a less-than-proportional number of IPOs and diversity investments. This information could potentially be useful to entrepreneurs looking to take their companies public or filtering their funding search by firms that offer the highest level of diversity investments. In practice, firms in the first cluster to should be interpreted to represent the average VC firm with average total investments, diversity investments, and IPO exists. The second cluster represents firms that entrepreneurs seeking diversity investments or a strong track record of IPOs should avoid. The third cluster represents outliers— proportionally, these firms do not offer substantially better prospects for diversity investments or IPOs than cluster 1 firms. 
+The objective of this analysis was to create a logical, coherent grouping of the 279 organizations represented in the dataset, differentiated along variations in total investments, IPO exits, and diversity investments. The analysis found a high level of similarity among most of the firms, with notable exceptions in the second and third clusters. While diversity investments and IPOs appeared to strongly correlated with total investments, the second cluster provides a notable exception. These firms had a high level of total investments but a less-than-proportional number of IPOs and diversity investments. This information could potentially be useful to entrepreneurs looking to take their companies public or filtering their funding search by firms that offer the highest level of diversity investments. In practice, firms in the first cluster to should be interpreted to represent the average VC firm with average total investments, diversity investments, and IPO exists. The second cluster represents firms that entrepreneurs seeking diversity investments or a strong track record of IPOs should avoid. The third cluster represents outliers— proportionally, these firms do not offer substantially better prospects for diversity investments or IPOs than cluster 1 firms. 
 
-Additional data that may be useful for further analysis includes information and statistics on alternative exit options (i.e., other than IPOs). It would be interesting to see if performing a cluster analysis using another metric would help to further differentiate the firms
-
+Additional data that may be useful for further analysis includes information and statistics on alternative exit options (i.e., other than IPOs). It would be interesting to see if performing a cluster analysis along another metric of performance would help to meaningully differentiate the firms beyond the IPO and diversity investment cluster analysis above.
 
 
 ## Step-by-step Instructions for Excel Data Analysis
-1. Download GDP, national defense expenditures and spending, and the effective federal funds rate from FRED
-2. Extract revenue, total assets, and shareholders' equity data from GDC's form 10-K reports
-3. Use ratio analysis formulas to compute net profit margin, total asset turnover, ROA, leverage, and ROE
-4. Use Data Analysis ToolPak to run multiple linear regression analysis for net operating income (dependent variable) and net profit margin, total asset turnover, ROA, leverage, and ROE (independent variables)
-5. Check for multicollinearity using correlation function in Data Analysis ToolPak
-6. Remove variables with high correlation
-7. Rerun multiple linear regression analysis
-8. Perform multiple linear regression analysis for net operating income (dependent variable) and GDP, national defense consumption expenditures and investment, and the effective federal funds rate (independent variables)
-9. Create scatterplots for net income vs. ROA, net income vs. financial leverage, and net income vs. national defense consumption expenditures and investment
+1. Download [Crunchbase Accelerator University Data](https://github.com/dmathe18/crunchbase_vc_cluster_analysis/blob/main/crunchbase_filtered_data.xlsx) dataset from Github repository
+2. Transform data into table using Excel table feature
+3. Identify columns of interest; highlight those columns and remove blanks using filter feature
+4. Copy data and transfer to second sheet
+5. Delete unused columns, add 9 rows above for cluster analysis, and add 1 column to number the VC firms
+6. Create scatter plots using recommended charts; edit axes lables and title
+7. Calculate mean and average of each column
+8. Use mean and average values to compute z scores for each column
+9. Use SUMXMY2 function to calculate distance to cluster 1 squared, distance to cluster 2 squared, and so on
+10.Use MIN function to identify and list the minimum squared distance
+11. Use match function to display the anchor corresponding to the minimum distance squared
+12. Use Solver Data Analysis add-on to compute the clusters that minimize the sum of the minimum distances
+13. List cluster anchors in separate column; use COUNTIF function to calculate the frequency of each anchor
+14. Create graphs displaying frequency of each cluster and the cluster to which each organization corresponds
