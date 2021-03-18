@@ -39,7 +39,7 @@ We begin by creating scatter plots of IPO exits and diversity investments with r
 
 #### What is the relationship between total number of investments and number of exits (IPO)?
 
-![](.gitbook/assets/university-tier-counts.png)
+![Screen Shot 2021-03-18 at 12 30 38 PM](https://user-images.githubusercontent.com/78438582/111662034-f1dd3a00-87e5-11eb-8fd5-f1e20a8c03f0.png)
 
 Here we can see that two-year public and private higher education institutions make up most of the volume of colleges in the US, followed by "selective private" and "selective public" schools. As we might expect, there are very few "Ivy Plus" schools \(highly selective and highly ranked\), "other elite" schools \(including Johns Hopkins\), and "highly selective" public and private schools \(perhaps less than one per state\). This gives us an idea of the type of quantitative impact that education or admissions reform might have based on what type of institutions the reform focuses on.
 
