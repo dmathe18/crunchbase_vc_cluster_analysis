@@ -13,18 +13,16 @@ With over [1000 active venture capital firms](https://iveybusinessjournal.com/pu
 
 ## Business Question
 
-_**How can Johns Hopkins University know if their recent decision to end legacy preferences will better equip them to “educate \[more\] qualified and promising students from all backgrounds and to help launch them up the social ladder,” and what metrics should the university measure to monitor their progress?**_
+_**How might a set of 279 venture capital funding sources be grouped or clustered according to IPO exits, diversity, and total investments?**_
+
 
 ## Data Question - Open Data
 
-We'l use open data from two sources: 
+We'l use open data from one source: 
 
-1. **Opportunity Insights**: this research group works to "identify barriers to economic opportunity and develop scalable solutions that will empower people throughout the United States to rise out of poverty and achieve better life outcomes." They characterized the role that college's play in intergenerational income mobility in a 2017 study, and have made this data publicly accessible through their website. We will use two datasets from this study:
-   1. [College Level Characteristics from the IPEDS Database and the College Scorecard](https://opportunityinsights.org/data/?geographic_level=100&topic=0&paper_id=0#resource-listing) \(mrc\_table10\): this dataset contains data about 2,464 higher education institutions in the United States including location, sticker price, student demographics, major distributions, acceptance rate, among other data points. A full data dictionary of the column variables is available [here](https://opportunityinsights.org/wp-content/uploads/2018/04/Codebook-MRC-Table-10.pdf).
-   2. [Baseline Cross-Sectional Estimates of Child and Parent Income Distributions by College](https://opportunityinsights.org/data/?geographic_level=100&topic=0&paper_id=0#resource-listing) \(mrc\_table02\): this dataset contains aggregated data of children's and parents' income distributions from each college in 2000 and the child's income distribution as income-earning adults in 2013.  A full data dictionary of the column variables is available [here](https://opportunityinsights.org/wp-content/uploads/2018/04/Codebook-MRC-Table-2.pdf).
-   3. [Crosswalk from the Department of Education's College-Level OPEIDs to Super-OPEID Groups used in Income Segregation and Intergenerational Mobility Across Colleges in the United States ](https://opportunityinsights.org/data/?geographic_level=100&topic=0&paper_id=0#resource-listing)\(mrc\_table11\): this dataset contains the "key" for the US Department of Educations's OPEID \(Office of Postsecondary Education Identification\) numbers and Opportunity Insights' "super OPEID" values. A full data dictionary of the column variables is available [here](https://opportunityinsights.org/wp-content/uploads/2018/04/Codebook-MRC-Table-11.pdf).
-2. **United States Department of Education**
-   1. [CollegeScorecard Data](https://collegescorecard.ed.gov/data/) \(from original data: MERGED2008_09PP.csv, column \_\_PCTPELL,_ Pell-related data only in GitHub repository: [CollegeScorecard\_Pell\_data.csv](https://github.com/jhu-business-analytics/metrics-for-college-social-mobility/blob/master/original_datasets/CollegeScorecard_Pell_data.csv)\): the original open data from the US Department of Education on US colleges contains several csv files of data related to college costs, financial aid, and value of higher education in the US. The csv document in the GitHub repository contains the [Pell Grant](https://studentaid.gov/understand-aid/types/grants/pell) specific information from the 2008-2009 academic year as an estimate for the percentage of Pell Grant recipients in 2000, since 2008-09 is the earliest year that this data is publicly available. 
+1. **Crunchbase**: Crunchbase works with partners to maintain the highest quality company information while enabling world-class research on investment trends and business ecosystems. Leverageing 400+ algorithms and its netowork of 600,000+ executives, entrepreneurs, and investors, the platform validates is data on a daily basis and follows over 2,000 of the top news publications to ensure it captures every notable funding round, acquisition, and exit. We will use one dataset from this study:
+   1. [Crunchbase Accelerator University Data](https://github.com/dmathe18/crunchbase_vc_cluster_analysis/blob/main/crunchbase_filtered_data.xlsx) \(mrc\_table10\): this dataset contains information about 1,950 venture capital firms and investors, describing characteristics such as number of investments, number of exits, location, description, and investor type.
+
 
 ## Data Question - Analysis
 
