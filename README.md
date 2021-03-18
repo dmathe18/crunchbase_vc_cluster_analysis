@@ -41,13 +41,13 @@ We begin by creating scatter plots of IPO exits and diversity investments with r
 
 ![Screen Shot 2021-03-18 at 12 30 38 PM](https://user-images.githubusercontent.com/78438582/111662034-f1dd3a00-87e5-11eb-8fd5-f1e20a8c03f0.png)
 
-Here we can see that two-year public and private higher education institutions make up most of the volume of colleges in the US, followed by "selective private" and "selective public" schools. As we might expect, there are very few "Ivy Plus" schools \(highly selective and highly ranked\), "other elite" schools \(including Johns Hopkins\), and "highly selective" public and private schools \(perhaps less than one per state\). This gives us an idea of the type of quantitative impact that education or admissions reform might have based on what type of institutions the reform focuses on.
+This scatter plot charts the relationship between total number of investments and number of IPOs. The R-squared value of .9049 indicates that 90.49% of the variation in the number of IPOs is explained by the variation in the number of investments. In other words, there is a strong, positive correlation between total investments and the number of IPOs. This is important because it suggests a linear proportional correspondence between the two variables, making it appear unlikely that larger firms outperform smaller firms in terms of number of IPOs as a proportion of total IPOs. Stated differently, the graph seems to suggest that larger firms have attracted more interest than smaller firms for reasons other than their ability to take companies public. 
 
 #### What is the relationship between total number of investments and number of diversity investments?
 
 ![Screen Shot 2021-03-18 at 12 31 13 PM](https://user-images.githubusercontent.com/78438582/111662138-0d484500-87e6-11eb-87f8-9a63d7b8a360.png)
 
-Here we see almost an opposite type of distribution--the highly selective private schools have the highest sticker price, and the two-year not-for-profit institutions have the lowest sticker price. We should also note that the sticker price also does not necessarily reflect the price that students need to pay to attend the institution, however, it can give us insight into the type of students who attend those schools and who don't receive financial aid. Additionally, highly selective public schools have a significantly lower sticker price than their peer institutions, so this may indicate that students could get a better "bang for their buck" here if the student outcomes are similar to peer institutions. 
+This graph shows a strikingly similar relationship between total investments and number of diversity investments. The R-squared value of .9698 indicates that 96.98% of the variation in the number of diversity investments is explained by the variation in the number of investments. Similar to the previous graph, there is a strong, positive correlation between total investments and the number of diversity investments. While the 6 data points with over 1,000 total investments may be considered outliers with respect to the rest of the data, the visualization seems to imply that the total investments offers high predictive value for the number of diversity investments. This may be important to investors seeking to interpret the meaning behind a high level of diversity investments made by a particular VC firm— in particular, it suggests that for many companies, high levels of diversity investments may be more a function of total number of investments rather than any particular interest in increasing the representation of diverse entrepreneurs among its investments. 
 
 #### How could the set of 279 venture capital firms and investors included in the filtered Crunchbase accelerator university dataset be clustered according to IPO exits, diversity, and total investments?
 
@@ -60,4 +60,6 @@ We can also look at the average income distribution at the different higher educ
 ![Screen Shot 2021-03-18 at 12 36 12 PM](https://user-images.githubusercontent.com/78438582/111662741-93fd2200-87e6-11eb-867f-e6163f559dc8.png)
 
 
-## Business Answer
+## Data Interpretation
+
+## Step-by-step Instructions for Excel Data Analysis
