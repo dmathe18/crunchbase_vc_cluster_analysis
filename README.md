@@ -21,50 +21,39 @@ _**How might a set of 279 venture capital funding sources be grouped or clustere
 We'l use open data from one source: 
 
 1. **Crunchbase**: Crunchbase works with partners to maintain the highest quality company information while enabling world-class research on investment trends and business ecosystems. Leverageing 400+ algorithms and its netowork of 600,000+ executives, entrepreneurs, and investors, the platform validates is data on a daily basis and follows over 2,000 of the top news publications to ensure it captures every notable funding round, acquisition, and exit. We will use one dataset from this study:
-   1. [Crunchbase Accelerator University Data](https://github.com/dmathe18/crunchbase_vc_cluster_analysis/blob/main/crunchbase_filtered_data.xlsx) \(mrc\_table10\): this dataset contains information about 1,950 venture capital firms and investors, describing characteristics such as number of investments, number of exits, location, description, and investor type.
+   1. [Crunchbase Accelerator University Data](https://github.com/dmathe18/crunchbase_vc_cluster_analysis/blob/main/crunchbase_filtered_data.xlsx): this dataset contains information about 1,950 venture capital firms and investors, describing characteristics such as number of investments, number of exits, location, description, and investor type.
 
 
 ## Data Question - Analysis
 
 We’ll use Microsoft Excel to answer:
 
-* **What did the US college landscape look like in 2000 and 2013?** Exploring general college data regarding enrollment, sticker price, expenditures, and other related metrics per university "tier" or ranking
-* **How do parents’ and kids’ income data relate college tier?** Exploring the relationship between income distributions of students/parents entering colleges at different types of higher education institutions
-* **How do colleges contribute to social mobility?** Exploring how students' income distribution changes when they are around the age of 35 \(likely earning a stable income instead of in between jobs or in graduate school\)
-* **Is 'percentage of Pell-eligible students' a good metric to define student income diversity? What other metrics should JHU monitor to continue to develop a more robust student body and subsequent alumni network?** Exploring specific metrics related to Pell grant recipients to see how colleges can use this percentage--or other--metric\(s\)--to measure their social mobility impact 
+* **What is the relationship between total number of investments and number of exits (IPO)?** 
+* **What is the relationship between total number of investments and number of diversity investments?** 
+* **How could the set of 279 venture capital firms and investors included in the filtered Crunchbase accelerator university dataset be clustered according to IPO exits, diversity, and total investments?** 
+
 
 ## Data Answer
 
-Looking at colleges in general, we can start to understand the US higher education landscape in different categories, such as college "tier" or combination of selectivity and rank in 200.
+We begin by creating scatter plots of IPO exits and diversity investments with respect to total number of investments, and proceed with a cluster analysis of the data which categorizes the observations such that the objects in each group are similar, and the objects in each group are substantially different from the objects in other groups.
 
-#### How many colleges are in each tier?
+#### What is the relationship between total number of investments and number of exits (IPO)?
 
 ![](.gitbook/assets/university-tier-counts.png)
 
 Here we can see that two-year public and private higher education institutions make up most of the volume of colleges in the US, followed by "selective private" and "selective public" schools. As we might expect, there are very few "Ivy Plus" schools \(highly selective and highly ranked\), "other elite" schools \(including Johns Hopkins\), and "highly selective" public and private schools \(perhaps less than one per state\). This gives us an idea of the type of quantitative impact that education or admissions reform might have based on what type of institutions the reform focuses on.
 
-#### What's the average sticker price for higher education institutions at each tier?
+#### What is the relationship between total number of investments and number of diversity investments?
 
 ![](.gitbook/assets/final-chart.png)
 
 Here we see almost an opposite type of distribution--the highly selective private schools have the highest sticker price, and the two-year not-for-profit institutions have the lowest sticker price. We should also note that the sticker price also does not necessarily reflect the price that students need to pay to attend the institution, however, it can give us insight into the type of students who attend those schools and who don't receive financial aid. Additionally, highly selective public schools have a significantly lower sticker price than their peer institutions, so this may indicate that students could get a better "bang for their buck" here if the student outcomes are similar to peer institutions. 
 
-#### How does income distribution compare at different university tiers?
+#### How could the set of 279 venture capital firms and investors included in the filtered Crunchbase accelerator university dataset be clustered according to IPO exits, diversity, and total investments?
 
 ![](.gitbook/assets/parent_income_dist_by_tier.png)
 
 We can also look at the average income distribution at the different higher education tiers where Q1 indicates families in the lowest income quintile and Q5 indicates families in the highest income quintile. We can see that the income distribution starts to even out when we look at nonselective four-year colleges and that elite and other highly selective institutions are predominantly filled with students from the highest income quintile.
 
-#### How do colleges at different institutions play a role in their students' social mobility?
-
-![](.gitbook/assets/student_income_mobility_by_tier.png)
-
-To understand more about how colleges contribute to social mobility, we can compare the average income "standing" of students based on their tax records approximately 10 years after graduating from college. Even though all schools have students from all five income quintiles, students from similarly tiered universities end up at about the same income distribution level, regardless of their position entering college. This gives us insight into the potential impact that a specific university or tier of universities can have on social mobility and how this impact differs between different schools. It's important to note here though, that this visual doesn't give us insight into how many students come into college at each income quintile, which would affect the net social mobility impact from any specific university.
-
-#### What do Pell Grants tell us about how a college contributes to social mobility and university diversity?
-
-![](.gitbook/assets/q1_q2_pell_college_data.png)
-
-While President Daniels mentions "Pell-eligible" students as a metric for Johns Hopkins to measure their  students' socioeconomic diversity, we may want to explore what this looks like in terms of Pell Grant recipients at institutions to gain some insight into the type of financial support that low income students receive to attend these institutions. [Pell eligibility](https://www.usnews.com/education/best-colleges/paying-for-college/articles/everything-you-need-to-know-about-the-pell-grant) is based on several factors including students' and parents' income and college cost and full-time vs. part-time status. Pell Grants are not the only kind of financial aid that students can receive, however, this could give us insight into how much support students have at different institutions compared to the distribution of the lowest two income quintiles. What else could the Pell recipient data tell us about the institution?
 
 ## Business Answer
