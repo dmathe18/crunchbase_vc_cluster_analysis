@@ -57,8 +57,7 @@ Here we see almost an opposite type of distribution--the highly selective privat
 
 We can also look at the average income distribution at the different higher education tiers where Q1 indicates families in the lowest income quintile and Q5 indicates families in the highest income quintile. We can see that the income distribution starts to even out when we look at nonselective four-year colleges and that elite and other highly selective institutions are predominantly filled with students from the highest income quintile.
 
-![Screen Shot 2021-03-18 at 12 35 01 PM](https://user-images.githubusercontent.com/78438582/111662516-5e583900-87e6-11eb-99a4-05a8cf61161f.png)
-
+![Screen Shot 2021-03-18 at 12 36 12 PM](https://user-images.githubusercontent.com/78438582/111662741-93fd2200-87e6-11eb-867f-e6163f559dc8.png)
 
 
 ## Business Answer
