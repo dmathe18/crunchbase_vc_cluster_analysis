@@ -55,11 +55,11 @@ This graph shows a strikingly similar relationship between total investments and
 
 The image above displays the results of the cluster analysis performed for the 279 venture capital firms and investors represented in the data set. Three clusters were used in the analysis, with the Excel solver finding a minimum squared distance of 81.56 for the grouping achieved. The first cluster— Microsoft Accelerator Seattle— represents VC firms with approximately average total investments, IPO exits, and diversity investments. The second cluster— MassChallenge— represents VC firms with a high level of total investments but a less-than-proportional number of IPOs and diversity investments. The third cluster— Techstars— represent firms with extremely high levels of total investments, IPOs, and diversity investments. 
 
-![Screen Shot 2021-03-18 at 12 34 13 PM](https://user-images.githubusercontent.com/78438582/111662427-497ba580-87e6-11eb-8176-46bb50e0e6e5.png)
+![cluster_anchor_frequency](https://user-images.githubusercontent.com/78438582/117337900-c9bba000-ae52-11eb-8912-c1e1adb94e25.png)
 
 As we can see, the vast majority of venture capital firms in the data set can be grouped in with the first cluster, suggesting that most of the firms have about the same level of total investments, IPO exits, and diversity investments. The z score for these firms is likely negative due to the long right tail of the distribution caused by the six outliers mentioned above. Three firms can be grouped in with the second pool— those with high level of total investments but a less-than-proportional number of IPOs and diversity investments. Three other firms are a part of the third cluster, which represent firms with extremely high levels of total investments, IPOs, and diversity investments. 
 
-![Screen Shot 2021-03-18 at 12 33 15 PM](https://user-images.githubusercontent.com/78438582/111662437-4c769600-87e6-11eb-85b1-654c680d5e09.png)
+![cluster_anchor_by_org](https://user-images.githubusercontent.com/78438582/117337936-d50ecb80-ae52-11eb-8ace-cc83ab7a283c.png)
 
 The graph above shows the cluster anchor of each organization/person number, with 1 corresponding to the first entry in the dataset, 2 corresponding to the second entry in the dataset, and so on. This chart provides another view of the overwhelming representation of cluster 1 firms as a fraction of the whole.
 
